@@ -4,8 +4,8 @@ character-password = 115-66-104-223-81-220-99-63-144-100-40-201-7-87-177-173
 
 [CHARACTER]
 character-height = 0
-character-posx = 3254
-character-posy = 3286
+character-posx = 3252
+character-posy = 3285
 character-rights = 2
 character-ismember = 0
 character-isPlatiumMember = 0
@@ -14,10 +14,10 @@ character-lastconnection = 127.0.0.1
 character-lastlogin = 20190725
 character-energy = 100
 character-gametime = 0
-character-gamecount = 58771
+character-gamecount = 59368
 
 [EQUIPMENT]
-character-equip = 0	1044	1	
+character-equip = 0	15345	1	
 character-equip = 1	14073	1	
 character-equip = 2	-1	0	
 character-equip = 3	-1	0	
@@ -73,10 +73,10 @@ character-item = 1	2348	1
 character-item = 2	14097	1
 character-item = 3	15334	1
 character-item = 4	9005	1
+character-item = 5	1045	1
 
 [BANK]
 character-bank = 0	1705	2
-character-bank = 1	15346	1
 character-bank = 2	2573	1
 character-bank = 3	1266	1
 character-bank = 4	1270	1
@@ -95,11 +95,11 @@ character-bank = 16	9107	1
 character-bank = 17	4152	1
 character-bank = 18	14140	1
 character-bank = 19	9118	1
-character-bank = 22	3392	1
-character-bank = 23	1276	1
-character-bank = 24	2506	1
-character-bank = 25	2656	1
-character-bank = 26	244	1
+character-bank = 20	3392	1
+character-bank = 21	1276	1
+character-bank = 22	2506	1
+character-bank = 23	2656	1
+character-bank = 24	244	1
 
 [FRIENDS]
 character-friend = 0	1828833603151114457

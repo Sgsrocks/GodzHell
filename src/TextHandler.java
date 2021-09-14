@@ -1,18 +1,15 @@
-import java.io.*;
-
-
-public class TextHandler { 
+public class TextHandler {
 
     /*
      *  (C) ??
      */
-	
+
     public TextHandler() {// Nothing needs to be put in here
     }
 
     public void process(int a) {
 
-        client p = (client) server.playerHandler.players[a];
+        client p = (client) PlayerHandler.players[a];
 
         // ---Start of prayer list---
         p.sendQuest("@whi@ Prayer", 687);
@@ -121,12 +118,12 @@ public class TextHandler {
 
         // ----Bonuses----
         p.sendQuest("@gre@Attack bonus", 1673);
-        p.sendQuest("@gre@Defence bonus", 1674); 
+        p.sendQuest("@gre@Defence bonus", 1674);
         p.sendQuest("@gre@Other bonuses", 1685);
 
         // Hands
         p.sendQuest("@gre@Choose Attack Style", 5858);
-        p.sendQuest("@whi@Punch!", 5866); 
+        p.sendQuest("@whi@Punch!", 5866);
         p.sendQuest("@gre@Kick", 5867);
         p.sendQuest("@whi@Block", 5868);
         p.sendQuest("", 5869);
@@ -140,7 +137,7 @@ public class TextHandler {
 
         // barrows?
         p.sendQuest("@gre@Choose Attack Style", 5858);
-        p.sendQuest("@whi@Punch!", 5866); 
+        p.sendQuest("@whi@Punch!", 5866);
         p.sendQuest("@gre@Kick", 5867);
         p.sendQuest("@whi@Block", 5868);
         p.sendQuest("", 5869);
@@ -154,7 +151,7 @@ public class TextHandler {
 
         // whip ****
         p.sendQuest("@gre@Choose Attack Style", 12294);
-        p.sendQuest("@whi@Flick", 12302); 
+        p.sendQuest("@whi@Flick", 12302);
         p.sendQuest("@gre@Lash", 12303);
         p.sendQuest("@whi@Deflect", 12304);
         p.sendQuest("", 12305);

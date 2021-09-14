@@ -10,8 +10,8 @@ character-Druidkills =0
 character-Demonkills =0
 character-JDemonkills 0
 character-Generalkills0
-character-lastlogin = DESKTOP-VHCUIVG
-character-lastlogintime = 20060101
+character-lastlogin = c-67-183-145-39.hsd1.wa.comcast.net
+character-lastlogintime = 20210727
 character-reputation = 0
 character-ancients = 0
 character-starter = 0
@@ -31,58 +31,58 @@ character-quest_3 = 0
 
 [LOOK]
 character-look = 0	0
-character-head = 1
+character-head = 3
 character-torso = 18
 character-arms = 26
 character-hands = 33
 character-legs = 36
 character-feet = 42
-character-beard = 8
+character-beard = 10
 
-character-look = 1	7
-character-head = 1
+character-look = 1	12
+character-head = 3
 character-torso = 18
 character-arms = 26
 character-hands = 33
 character-legs = 36
 character-feet = 42
-character-beard = 8
+character-beard = 10
 
-character-look = 2	8
-character-head = 1
+character-look = 2	0
+character-head = 3
 character-torso = 18
 character-arms = 26
 character-hands = 33
 character-legs = 36
 character-feet = 42
-character-beard = 8
+character-beard = 10
 
-character-look = 3	9
-character-head = 1
+character-look = 3	0
+character-head = 3
 character-torso = 18
 character-arms = 26
 character-hands = 33
 character-legs = 36
 character-feet = 42
-character-beard = 8
+character-beard = 10
 
-character-look = 4	5
-character-head = 1
+character-look = 4	0
+character-head = 3
 character-torso = 18
 character-arms = 26
 character-hands = 33
 character-legs = 36
 character-feet = 42
-character-beard = 8
+character-beard = 10
 
 character-look = 5	0
-character-head = 1
+character-head = 3
 character-torso = 18
 character-arms = 26
 character-hands = 33
 character-legs = 36
 character-feet = 42
-character-beard = 8
+character-beard = 10
 
 
 [FRIENDS]

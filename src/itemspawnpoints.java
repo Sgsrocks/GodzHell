@@ -1,28 +1,24 @@
 // Item Spawn Points by xerozcheez
-import java.io.*;
-public class itemspawnpoints 
-{
-public int spawntimer = 0;
 
-public void LoadItems()
-{
-for (int i = 0; i <= 5000; i++){
-if(spawntimer <= 1)
-{
-ItemHandler.addItem(2414, 3118, 9848, 1, ItemHandler.globalItemController[i], false); // Zammy Cape
-ItemHandler.addItem(2412, 3119, 9848, 1, ItemHandler.globalItemController[i], false); // Sara Cape
-ItemHandler.addItem(2413, 3120, 9848, 1, ItemHandler.globalItemController[i], false); // Guthix Cape
-ItemHandler.addItem(995, 2507, 3379, 50000000, ItemHandler.globalItemController[i], false); //Nets's Moderator Island 50m Drop
-ItemHandler.addItem(995, 3269, 3352, 100000, ItemHandler.globalItemController[i], false);
-ItemHandler.addItem(995, 3267, 3352, 100000, ItemHandler.globalItemController[i], false);
-spawntimer = 100;
-}
-}
-}
+public class itemspawnpoints {
+    public int spawntimer = 0;
 
-public void process()
-{
-LoadItems();
-spawntimer -= 1;
-}
+    public void LoadItems() {
+        for (int i = 0; i <= 5000; i++) {
+            if (spawntimer <= 1) {
+                ItemHandler.addItem(2414, 3118, 9848, 1, ItemHandler.globalItemController[i], false); // Zammy Cape
+                ItemHandler.addItem(2412, 3119, 9848, 1, ItemHandler.globalItemController[i], false); // Sara Cape
+                ItemHandler.addItem(2413, 3120, 9848, 1, ItemHandler.globalItemController[i], false); // Guthix Cape
+                ItemHandler.addItem(995, 2507, 3379, 50000000, ItemHandler.globalItemController[i], false); //Nets's Moderator Island 50m Drop
+                ItemHandler.addItem(995, 3269, 3352, 100000, ItemHandler.globalItemController[i], false);
+                ItemHandler.addItem(995, 3267, 3352, 100000, ItemHandler.globalItemController[i], false);
+                spawntimer = 100;
+            }
+        }
+    }
+
+    public void process() {
+        LoadItems();
+        spawntimer -= 1;
+    }
 }

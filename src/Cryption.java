@@ -1,42 +1,39 @@
-public class Cryption
-{
+public class Cryption {
 
-    public Cryption(int ai[])
-    {
+    public int keyArrayIdx = 0;
+    public int[] keySetArray = null;
+    public int[] cryptArray = null;
+    public int cryptVar1 = 0;
+    public int cryptVar2 = 0;
+    public int cryptVar3 = 0;
+    public Cryption(int[] ai) {
         cryptArray = new int[256];
         keySetArray = new int[256];
-        for(int i = 0; i < ai.length; i++)
+        for (int i = 0; i < ai.length; i++)
             keySetArray[i] = ai[i];
 
         initializeKeySet();
     }
 
-    public int getNextKey()
-    {
-        if(keyArrayIdx-- == 0)
-        {
+    public int getNextKey() {
+        if (keyArrayIdx-- == 0) {
             generateNextKeySet();
             keyArrayIdx = 255;
         }
         return keySetArray[keyArrayIdx];
     }
 
-    public void generateNextKeySet()
-    {
+    public void generateNextKeySet() {
         cryptVar2 += ++cryptVar3;
-        for(int i = 0; i < 256; i++)
-        {
+        for (int i = 0; i < 256; i++) {
             int j = cryptArray[i];
-            if((i & 3) == 0)
+            if ((i & 3) == 0)
                 cryptVar1 ^= cryptVar1 << 13;
-            else
-            if((i & 3) == 1)
+            else if ((i & 3) == 1)
                 cryptVar1 ^= cryptVar1 >>> 6;
-            else
-            if((i & 3) == 2)
+            else if ((i & 3) == 2)
                 cryptVar1 ^= cryptVar1 << 2;
-            else
-            if((i & 3) == 3)
+            else if ((i & 3) == 3)
                 cryptVar1 ^= cryptVar1 >>> 16;
             cryptVar1 += cryptArray[i + 128 & 0xff];
             int k;
@@ -46,8 +43,7 @@ public class Cryption
 
     }
 
-    public void initializeKeySet()
-    {
+    public void initializeKeySet() {
         int i1;
         int j1;
         int k1;
@@ -56,8 +52,7 @@ public class Cryption
         int j2;
         int k2;
         int l = i1 = j1 = k1 = l1 = i2 = j2 = k2 = 0x9e3779b9;
-        for(int i = 0; i < 4; i++)
-        {
+        for (int i = 0; i < 4; i++) {
             l ^= i1 << 11;
             k1 += l;
             i1 += j1;
@@ -84,8 +79,7 @@ public class Cryption
             l += i1;
         }
 
-        for(int j = 0; j < 256; j += 8)
-        {
+        for (int j = 0; j < 256; j += 8) {
             l += keySetArray[j];
             i1 += keySetArray[j + 1];
             j1 += keySetArray[j + 2];
@@ -128,8 +122,7 @@ public class Cryption
             cryptArray[j + 7] = k2;
         }
 
-        for(int k = 0; k < 256; k += 8)
-        {
+        for (int k = 0; k < 256; k += 8) {
             l += cryptArray[k];
             i1 += cryptArray[k + 1];
             j1 += cryptArray[k + 2];
@@ -175,11 +168,4 @@ public class Cryption
         generateNextKeySet();
         keyArrayIdx = 256;
     }
-
-    public int keyArrayIdx = 0;
-    public int keySetArray[] = null;
-    public int cryptArray[] = null;
-    public int cryptVar1 = 0;
-    public int cryptVar2 = 0;
-    public int cryptVar3 = 0;
 }
